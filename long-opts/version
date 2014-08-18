@@ -2,7 +2,7 @@
 set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
 
 case "$1" in
-  --version|)
+  --version)
     if [[ -d "$PLUSHU_ROOT/.git" ]]; then
       GIT_DIR="$PLUSHU_ROOT/.git" git describe
       exit 0
