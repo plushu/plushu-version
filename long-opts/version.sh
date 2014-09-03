@@ -1,6 +1,3 @@
-#!/usr/bin/env bash
-set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
-
 case "$1" in
   --version)
     if [[ -d "$PLUSHU_ROOT/.git" ]]; then
